@@ -2,7 +2,7 @@
   "name": "catalogo",
   "version": "0.0.1",
   "description": "Un catalogo",
-  "productName": "Catalogo de Toyota",
+  "productName": "Catalogo - Destinos turísticos",
   "author": "sadseleven <abraham23ob99@gmail.com>",
   "private": true,
   "scripts": {

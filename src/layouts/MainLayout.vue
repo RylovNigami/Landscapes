@@ -2,28 +2,17 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
-        <q-toolbar-title>Catalogo de Toyota</q-toolbar-title>
+        <q-toolbar-title>Destinos turísticos</q-toolbar-title>
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header>Tipos de vehiculos </q-item-label>
+        <q-item-label header>Catalogos de destinos turisticos</q-item-label>
 
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+        <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
 
@@ -39,28 +28,34 @@ import EssentialLink from "components/EssentialLink.vue";
 
 const linksList = [
   {
-    title: "SUV",
-    caption: "Ver SUVs disponibles",
-    icon: "mdi-car-estate",
+    title: "Pagina Principal",
+    caption: "",
+    icon: "mdi-home",
     link: "/",
   },
   {
-    title: "Sedan",
-    caption: "Ver sedanes disponibles",
-    icon: "mdi-car-side",
-    link: "/sedan",
+    title: "Parques Nacionales",
+    caption: "Ver parques y destinos unicos",
+    icon: "mdi-image-filter-hdr",
+    link: "/nationalParks",
   },
   {
-    title: "Hatchback",
-    caption: "Ver Hatchbacks disponibles",
-    icon: "mdi-car-hatchback",
-    link: "/hatchback",
+    title: "Museos y lugares historicos",
+    caption: "Ver museos y lugares historicos",
+    icon: "mdi-church",
+    link: "/historicPlaces",
   },
   {
-    title: "Camioneta",
-    caption: "Ver Camionetas disponibles",
-    icon: "mdi-car-lifted-pickup",
-    link: "/pickup",
+    title: "Playas e Islas",
+    caption: "Ver destinos playeros",
+    icon: "mdi-beach",
+    link: "/islandsAndBeaches",
+  },
+  {
+    title: "Ciudades y Lugares",
+    caption: "Ver destinos comerciales",
+    icon: "mdi-city-variant",
+    link: "/citiesAndLocations",
   },
 ];
 

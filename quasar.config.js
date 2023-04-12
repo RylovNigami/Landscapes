@@ -97,7 +97,7 @@ module.exports = configure(function (ctx) {
       // directives: [],
 
       // Quasar plugins
-      plugins: [],
+      plugins: ["Dialog"],
     },
 
     // animations: 'all', // --- includes all animations
@@ -144,12 +144,12 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `Catalogo de Toyota`,
-        short_name: `Catalogo Toyota`,
-        description: `Un catalogo de Toyota`,
+        name: `Catalogo - Destinos turísticos`,
+        short_name: `Destinos Turisticos`,
+        description: `Catalogo de destinos turisticos como guia para el vacacionista`,
         display: "standalone",
         orientation: "portrait",
-        background_color: "#ffffff",
+        background_color: "#ced3d3",
         theme_color: "#027be3",
         icons: [
           {

@@ -4,9 +4,22 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       { path: "", component: () => import("pages/IndexPage.vue") },
-      { path: "sedan", component: () => import("pages/SedanPage.vue") },
-      { path: "pickup", component: () => import("pages/PickupPage.vue") },
-      { path: "hatchback", component: () => import("pages/HatchbackPage.vue") },
+      {
+        path: "historicPlaces",
+        component: () => import("src/pages/historicPlacesPage.vue"),
+      },
+      {
+        path: "islandsAndBeaches",
+        component: () => import("src/pages/islandsAndBeachesPage.vue"),
+      },
+      {
+        path: "nationalParks",
+        component: () => import("src/pages/nationalParksPage.vue"),
+      },
+      {
+        path: "citiesAndLocations",
+        component: () => import("src/pages/citiesAndLocationsPage.vue"),
+      },
     ],
   },
 
